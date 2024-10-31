@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>남한고등학교 - 학교 퀴즈</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">홈으로</a></li>
+                <li><a href="index.html#about">학교소개</a></li>
+                <li><a href="index.html#facilities">시설</a></li>
+                <li><a href="index.html#programs">교육과정</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="quiz-page">
+        <div class="quiz-container">
+            <h1>남한고등학교 퀴즈</h1>
+            <div class="quiz-progress">
+                <span id="currentQuestion">1</span> / <span id="totalQuestions">5</span>
+            </div>
+            
+            <div class="quiz-content">
+                <div id="quizBox">
+                    <p id="question" class="question-text"></p>
+                    <div id="options" class="options-container"></div>
+                </div>
+                
+                <div class="quiz-controls">
+                    <button id="submitBtn" class="quiz-button">정답 제출</button>
+                    <button id="nextBtn" class="quiz-button" style="display: none;">다음 문제</button>
+                </div>
+                
+                <div id="result" class="result-container"></div>
+                
+                <div id="finalResult" class="final-result" style="display: none;">
+                    <h2>퀴즈 결과</h2>
+                    <p>총 <span id="totalCorrect">0</span>문제 중 <span id="correctCount">0</span>문제를 맞추셨습니다!</p>
+                    <button id="restartBtn" class="quiz-button">다시 시작</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 남한고등학교. 모든 권리 보유.</p>
+    </footer>
+
+    <script src="quiz.js"></script>
+</body>
+</html> 
